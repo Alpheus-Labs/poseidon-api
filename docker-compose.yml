@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    container_name: db
+    image: mysql:8.0.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=springdb
+    ports:
+    - 3333:3306
+  backend:
+    container_name: backend
+    restart: always
+    image: backend-spring
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    links:
+      - db

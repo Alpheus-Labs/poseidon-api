@@ -1,0 +1,5 @@
+spring:
+  jpa:
+    database: mysql
+  datasource:
+    url: jdbc:mysql://localhost:0000/database_name?user=user&password=pass
