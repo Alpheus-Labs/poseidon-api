@@ -14,8 +14,8 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "user")
-public class User {
+@Entity(name = "customer")
+public class Customer {
 
     @Id
     @GenericGenerator(name = "uuid", strategy = "uuid2")
