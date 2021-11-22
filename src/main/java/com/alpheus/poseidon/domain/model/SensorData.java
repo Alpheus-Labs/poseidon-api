@@ -11,7 +11,7 @@ import java.util.UUID;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "sensor_date")
+@Entity(name = "sensor_data")
 public class SensorData {
 
     @Id
